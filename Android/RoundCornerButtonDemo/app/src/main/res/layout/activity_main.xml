@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.kailun.demo.MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hello World!" />
+
+    <widget.RoundCornerButton
+        android:id="@+id/btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="普通的按钮"
+        android:enabled="true"
+        app:rcb_backgroundColor="@color/yellow"
+        app:rcb_backgroundColorDisabled="@color/light_grey"
+        app:rcb_cornerRadius="20dp"
+        />
+
+    <widget.RoundCornerButton
+        android:id="@+id/btn_disabled"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="禁用的按钮"
+        android:enabled="false"
+        app:rcb_backgroundColor="@color/yellow"
+        app:rcb_backgroundColorDisabled="@color/light_grey"
+        app:rcb_cornerRadius="20dp"
+        />
+
+</LinearLayout>
